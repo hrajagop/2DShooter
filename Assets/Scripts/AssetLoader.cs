@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class AssetLoader : MonoBehaviour
 {
@@ -8,7 +7,7 @@ public class AssetLoader : MonoBehaviour
 
     public void LoadMenuScene()
     {
-		SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+		SceneManager.LoadScene("Menu", false);
     }
 
     public void InstantiatePrefab()
